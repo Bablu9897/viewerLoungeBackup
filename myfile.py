@@ -1,3 +1,2 @@
-print("hello world")
-print("hesdfsfsfsfllo world")
-
+h = "hello"
+print(h)
