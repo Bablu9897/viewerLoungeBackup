@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Reviews</h1>
+<p>Average Rating: {{ average_rating|floatformat:1 }} / 5</p>
+
+<ul>
+    {% for review in reviews %}
+    <li>
+        <strong>{{ review.user.username }}</strong>: {{ review.rating }} Stars<br>
+        {{ review.comment }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
